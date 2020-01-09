@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link href="/assets/contact-styles.css" rel="stylesheet"></link>
+	</head>
+<body style="text-align: center;">
+    <%- include('partials/nav.ejs') %>
+<p style="text-align: center">Semantic Personal Publishing Platform</p>
+
+<h1>First Things First</h1>
+<p>It is our contact page</p>
+<p style="color:#97c63f;"><%= qs.name %></p>
+<form id='contact-form' method='POST' action='/contact'>
+    <label for="who">Who do you want to contact?</label>
+    <input type="text" name="who">
+    <br/>
+    <label for="dept">Department</label>
+    <input type="text" name="department">
+    <br/>
+    <label for="email">Email</label>
+    <input type="email" name="email">
+    <br/>
+    <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>

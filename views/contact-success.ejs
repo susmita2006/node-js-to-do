@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link href="/assets/contact-styles.css" rel="stylesheet"></link>
+	</head>
+<body style="text-align: center;">
+    <%- include('partials/nav.ejs') %>
+<h1>Thanks for getting in touch</h1>
+<p>You contacted <%= data.who %> in the department - <%= data.department %></p>
+<p>We will reply you in <%= data.email %></p>
+</body>
+</html>
